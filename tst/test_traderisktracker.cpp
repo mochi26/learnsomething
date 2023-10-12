@@ -30,5 +30,4 @@ TEST(TradeRiskTrackerTest, TrackerZeroTest) {
     riskTracker.addTrade(Trade(15, true, 1));
     riskTracker.updateRisk();
     EXPECT_NEAR(riskTracker.getRisk(), 15, 1e-4);
-    
 }
